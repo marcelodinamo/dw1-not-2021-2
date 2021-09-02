@@ -1,0 +1,12 @@
+a {
+    color: orangered;
+    text-decoration: none; /* Retira os sublinhados dos links */
+  }
+/* regras para links que ja foram clicados (visitados) */  
+a:visited {
+    color: orange;
+  }
+a:hover {
+    color: lightseagreen;
+    text-decoration: underline; /*Retorna o sublinhado */
+}  
