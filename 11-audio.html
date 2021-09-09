@@ -7,13 +7,41 @@
     <title>Áudio em HTML</title>
 </head>
 <body>
-    <h1>Áudio em HTML</h1>
-    
-    <h2>Formatos comuns de arquivos de áudio</h2>
-    <ul>
-        <li><strong>MP3</strong>. Formato de áudio mais popular na atualidade. Foi desenvolvido pelo instituto alemão Fraunhofer em 1993, como um formato de áudio de compressão com perdas. No entanto, seu uso estava sujeito a patentes até 2012, o que causou vários problemas legais. Atualmente, seu uso é livre. A sigla MP3 significa <em>MPEG Layer 3</em>, sendo que MPEG significa <em>Motion Picture Experts Group</em> (Grupo de especialistas em imagens em movimento).</li>
-        <li><strong>OGG</strong>. Também conhecido como OGG Vorbis, foi desenvolvido pela função Xiph.org e lançado em 2000 como uma alternativa livre ao MP3. Apesar de ter mais qualidade técnica, nunca alcançou a popularidade do concorrente. Também é um formato de compressão com perdas.</li>
-        <li><strong>WAV</strong>. Formato nativo de áudio dos sistemas operacionais da Microsoft e da IBM, lançado em 1991. Armazena o áudio sem compressão; portanto, os arquivos .wav são bem maiores que os dos outros formatos, embora a qualidade sonora também seja melhor.</li>
-    </ul>
+        <h1>Áudio em HTML</h1>
+        
+        <h2>Formatos comuns de arquivos de áudio</h2>
+        <ul>
+            <li><strong>MP3</strong>. Formato de áudio mais popular na atualidade. Foi desenvolvido pelo instituto alemão Fraunhofer em 1993, como um formato de áudio de compressão com perdas. No entanto, seu uso estava sujeito a patentes até 2012, o que causou vários problemas legais. Atualmente, seu uso é livre. A sigla MP3 significa <em>MPEG Layer 3</em>, sendo que MPEG significa <em>Motion Picture Experts Group</em> (Grupo de especialistas em imagens em movimento).</li>
+            <li><strong>OGG</strong>. Também conhecido como OGG Vorbis, foi desenvolvido pela função Xiph.org e lançado em 2000 como uma alternativa livre ao MP3. Apesar de ter mais qualidade técnica, nunca alcançou a popularidade do concorrente. Também é um formato de compressão com perdas.</li>
+            <li><strong>WAV</strong>. Formato nativo de áudio dos sistemas operacionais da Microsoft e da IBM, lançado em 1991. Armazena o áudio sem compressão; portanto, os arquivos .wav são bem maiores que os dos outros formatos, embora a qualidade sonora também seja melhor.</li>
+        </ul>
+
+    <h2>Exemplos de áudio</h2>
+        <!--
+            A tag audio é usada para colocar arquivos de áudio em pagina HTML.
+            Atributos
+            -contols: exibevos controles de mídia (reproduzir/pausar, volume, etc.) 
+            -autoplay: inicia a reprodução do audio assim que a pagina e carregada
+            -preload: indica o que sera carregado antecipadamente, antes o botão de roproduzir seja acionado . Valores 
+            *none: nada sera pré-carregado
+            *metadata: carrega apenas informações do arquivo, como sua duração (recomendado)
+            *auto: pré-carrega todo arquivo de mídia (padrão)   
+        -->
+        
+        <audio controls preload="metadata" src="audio/trilha.mp3"></audio>
+
+        <a href="audio/trilha.mp3" download>aqui</a>
+
+        <p>Áudio com arquivo remoto</p>
+
+        <audio controls preload="metadata" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Wolfgang_Amadeus_Mozart_-_Symphony_40_g-moll_-_1._Molto_allegro.ogg"> <p>Seu navegador suporta reprodução de áudio HTML. Clique <a href="https://upload.wikimedia.org/wikipedia/commons/9/99/Wolfgang_Amadeus_Mozart_-_Symphony_40_g-moll_-_1._Molto_allegro.ogg"> aqui </a> para baixar o arquivo </p> </audio>
+
+        
+        <h2>Áudio com multiplas icones</h2>
+        <audio controls preload = "metadata">
+            <source src = "audio/trilha.mp3" type = "audio/mpg">
+            <source src = "audio/trilha.ogg" type = "audio/ogg">
+            <source src = "audio/trilha.wav" type = "audio/wav">
+        </audio>
 </body>
 </html>
