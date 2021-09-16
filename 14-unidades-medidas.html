@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medidas</title>
+    <style>
+        #box1{
+            background-color: aliceblue;
+            border: 1px solid blue;
+            text-align: center;
+            width: 200px; /* largura */
+            height: 200px; /* altura */
+            font-size: 20pt;  
+        }
+
+        #box2{
+            background-color: lightyellow;
+            border: 6px dotted orange;
+            width: 6cm;
+            height: 20mm;
+        }
+
+        #pai1{
+            background-color: yellowgreen;
+            border: 2px solid green;
+            text-align: center;
+            width: 600px;
+            height: 300px;
+            font-size: 25pt;
+        }
+
+        #filho1{
+            background-color: pink;
+            border: 1px solid darkred;
+            width: 50%; /* relativa á largura do pai */
+            height: 70%; /* relativa á altura do pai */
+            font-size: 0.5em; /* 50% do tamanho da fonte do pai*/ 
+        }
+    </style>
+</head>
+<body>
+     <div id="box1">
+         Texto 1
+     </div>
+
+     <div id="box2">
+        Este quadro impresso em papel terá 6cm de largura por 20mm (2cm) de altura
+    </div>
+
+    <div id="pai1">
+        Elemento pai
+        <div id="filho1">
+             Elemento filho
+        </div>
+    </div>
+
+</body>
+</html>
