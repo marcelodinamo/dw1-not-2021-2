@@ -4,24 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Araras</title>
 </head>
 <body>
+    <!-- Imagem responsiva -->
     <picture>
         <!--
-            Quando a tela tiver mais de 630px de largura e menos de 1030px 
+            Quando os source estiverem trabalhando com max-width, as imagens
+            precisam ser colocadas da menor para a maior.
         -->
-        <source media="(max-width: 630px") srcset="araras-p.jpg" type="image/jpeg">
-        
-        <source media="(max-width: 1030px") srcset="araras-m.jpg" type="image/jpeg">
-
-        <img src="araras-g.jpg" alt="imagem grande">
-        
+        <source media="(max-width: 630px)" srcset="araras-p.jpg" type="image/jpeg">
+        <source media="(max-width: 1030px)" srcset="araras-m.jpg" type="image/jpeg">
+        <img src="araras-g.jpg" alt="Duas araras">
     </picture>
 
     <p>
-        <a href="index.html">Voltar</a>
+        <a href="index.html" rel="prev">&larr; Voltar</a>
     </p>
-    
 </body>
 </html>

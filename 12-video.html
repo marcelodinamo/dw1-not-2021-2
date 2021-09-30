@@ -35,46 +35,47 @@
 
     <p>Portanto, na maioria das vezes, o melhor a fazer é hospedar seu vídeo em serviços como o Youtube ou o Vimeo e apenas incorporar ("linkar") o vídeo em seu <em>site</em>. Enquanto vídeos hospedados no Youtube geralmente estarão disponíveis para um público amplo, enquanto o Vimeo, mediante pagamento, permite restringir o acesso aos vídeos.</p>
 
-    <h2>Exemplos simples de vídeo HTML</h2>
+    <h2>Exemplo simples de vídeo HTML</h2>
 
     <!--
-        Tag para exibir vídios: <videos> possui alguns dos mesmos atributos do <audio> como controls, autoplay, preload.
+        Tag para exibir vídeos: <video>
+        Possui alguns dos mesmos atributos do <audio>,
+        como controls, autoplay, preload.
         Atributos adicionais:
-        -width: especifica a largura do quadro onde sera exibido o videos
-        -poster: a imagem que sera exibida no quadro quando a representação estiver parada
+        - width: especifica a largura do quadro onde
+          será exibido o vídeo
+        - poster: a imagem que será exibida no quadro
+          quando a reprodução estiver parada
     -->
-
-    <video controls preload="metadata" src="video/instalar-teams.mp4" width="600px" poster="video/MicrosoftTeams-image.png"> 
-       <p> Seu navegador não é capaz de roproduzir videos nativamente. Clique
-       <a href="video/instalar-teams.mp4" download>Aqui </a></p>     
+    <video controls preload="metadata" src="video/instalar-teams.mp4" width="600px" poster="video/instalar-teams-poster.jpg">
+        <p>Seu navegador não é capaz de reproduzir vídeos nativamente. Clique <a href="video/instalar-teams.mp4" download>aqui</a> para baixar o arquivo.</p>
     </video>
-    
+
+    <h2>Vídeo com múltiplas fontes</h2>
+
+    <video controls preload="metadata" width="600px" poster="video/instalar-teams-poster.jpg">
+        <!-- Os sources são dispostos por ordem de 
+           preferência -->
         <!--
             O atributo "type" identifica o tipo de conteúdo (MIME Type) 
             que deve ser exibido.
             Para uma lista completa de MIME types, acesse:
             https://www.iana.org/assignments/media-types/media-types.xhtml
         -->
-
-    <h2>Vídeo com múltiplas fontes</h2>
-
-        <!--
-
-        -->
-
-    <video controls preload="metadata" width="600px" poster="video/MicrosoftTeams-image.png"> 
         <source src="video/instalar-teams.mp4" type="video/mp4">
         <source src="video/instalar-teams.webm" type="video/webm">
-        <source src="video/instalar-teams.ogv" type="video/ogv">
-        <p> Seu navegador não é capaz de roproduzir videos nativamente. Clique
-        <a href="video/instalar-teams.mp4" download>Aqui </a> para baixar o arquivo</p>     
-     </video>
+        <source src="video/instalar-teams.ogv" type="video/ogg">
 
-     <h2>Vídeo incorporado do Youtube</h2>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/0755SXCTCN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Seu navegador não é capaz de reproduzir vídeos nativamente. Clique <a href="video/instalar-teams.mp4" download>aqui</a> para baixar o arquivo.</p>
+    </video>
 
-     <h2>Vídeo incorporado do Vimeo</h2>
-     <iframe src="https://player.vimeo.com/video/114103722?h=39caf5e3ec" width="640" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <h2>Vídeo incorporado do Youtube</h2>
 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0755SXCTCN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Vídeo incorporado do Vimeo</h2>
+
+    <iframe src="https://player.vimeo.com/video/114103722?h=39caf5e3ec" width="640" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
 </body>
 </html>

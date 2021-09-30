@@ -2,6 +2,7 @@
 * {
     font-family: Calibri, Arial, sans;
 }
+
 table {
     /* Retirar o espaçamento entre as bordas das células */
     border-collapse: collapse;
@@ -11,6 +12,7 @@ table {
     */
     margin: 0 auto;
 }
+
 /* Regras para células de cabeçalho e de conteúdo */
 td, th {
     /* Borda */
@@ -18,18 +20,22 @@ td, th {
     /* Espaçamento interno da célula */
     padding: 6px;
 }
+
 th {
     /* Cor de fundo para as células de cabeçalho */
     background-color: lightblue;
 }
+
 .dir {
     /* Alinha o conteúdo à direita */
     text-align: right;
 }
+
 .ctr {
     /* Alinha o conteúdo no centro */
     text-align: center;
 }
+
 /* Essa regra se aplica apenas aos tr que estão
    dentro de um tfoot */
 tfoot tr {
@@ -39,4 +45,3 @@ tfoot tr {
     font-style: italic;
     background-color: lightgray;
 }
-
